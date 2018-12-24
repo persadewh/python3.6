@@ -64,3 +64,63 @@ python -m pip install novas
 ```bat
 python -m pip install --upgrade pip
 ```
+
+## Python
+
+### 调用
+
+```bat
+python -c command [args]
+```
+
+```bat
+python -m module [args]
+```
+
+### 参数传递
+
+```python
+import sys
+
+print(sys.argv[0])
+```
+
+### 编码
+
+```python
+# -*- coding: utf8 -*-
+```
+
+## 简要介绍
+
+### 数字
+
+```python
+>>> 2+2
+4
+>>> 50-5*6
+20
+>>>
+```
+
+```python
+>>> 17/3
+5.666666666666667
+>>> 17//3
+5
+>>> 17%3
+2
+>>> 5*3+2
+17
+>>>
+```
+
+```python
+>>> 5**2
+25
+>>> 2**7
+128
+>>>
+```
+
+### 字符串
