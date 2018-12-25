@@ -124,3 +124,92 @@ print(sys.argv[0])
 ```
 
 ### 字符串
+
+使用单引号或者双引号
+
+使用\进行转义
+
+```python
+>>> 'spam eggs'
+'spam eggs'
+>>> 'doesn\'t'
+"doesn't"
+>>> "doesn't"
+"doesn't"
+>>> '"yes", he said'
+'"yes", he said'
+>>> "\"yes\", he said"
+'"yes", he said'
+```
+
+如果字符中含有转义字符\，则可以在字符串前加r
+
+```python
+>>> print('C:\name')
+C:
+ame
+>>> print(r'C:\name')
+C:\name
+```
+
+字符常量使用"""..."""或者'''...''',可以使用\连接上下两行
+
+```python
+(tutorial-env) D:\myself\pythonspace\python3.6\python3.6>strings.py
+Usage: thingy [OPTIONs]
+    -h              Display this usage message
+    -H
+```
+
+使用 * 和 + 进行字符串连接
+
+```python
+>>> 3*'ll' + ' world'
+'llllll world'
+>>>
+```
+
+字符串索引
+
+```python
+>>> word = 'Python'
+>>> word[0]
+'P'
+>>> word[1]
+'y'
+>>> word[-1]
+'n'
+>>>
+```
+
+```python
+>>> word[-1]
+'n'
+>>> word[0:2]
+'Py'
+>>> word[0:-1]
+'Pytho'
+>>> word[2:5]
+'tho'
+>>> word[:2]
+'Py'
+>>> word[:2] + word[2:]
+'Python'
+```
+
+字符串变量不允许对单个字符进行修改，如果需要，则重新创建字符串变量
+
+```python
+>>> word[1] = 'J'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>>
+```
+
+字符串长度
+
+```python
+>>> len(word)
+6
+```
